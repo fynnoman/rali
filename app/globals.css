@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+body {
+  background: #FFFFFF;
+  color: #081A33;
+  font-feature-settings: "cv11", "ss01";
+  overflow-x: hidden;
+  min-height: 100%;
+  min-height: 100dvh;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: calc(68px + env(safe-area-inset-bottom));
+  }
+}
+
+::selection {
+  background: #22C55E;
+  color: #FFFFFF;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.9375rem 1.5rem;
+  background: #16A34A;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  letter-spacing: -0.005em;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(22, 163, 74, 0.08), 0 4px 12px rgba(22, 163, 74, 0.18);
+  transition: background 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+  text-align: center;
+}
+
+.btn-cta:hover {
+  background: #15803D;
+  box-shadow: 0 2px 4px rgba(21, 128, 61, 0.1), 0 6px 18px rgba(21, 128, 61, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-cta:active {
+  transform: translateY(0);
+}
+
+.btn-cta-lg {
+  min-height: 54px;
+  padding: 1.125rem 1.875rem;
+  font-size: 1rem;
+}
+
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.9375rem 1.5rem;
+  background: #FFFFFF;
+  color: #0B2448;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: 6px;
+  transition: background 120ms ease;
+}
+
+.btn-cta-white:hover {
+  background: #EAF1FA;
+}
+
+.btn-outline-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.9375rem 1.5rem;
+  background: transparent;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-radius: 6px;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.btn-outline-light:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-link-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 44px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 2px;
+  transition: border-color 120ms ease;
+}
+
+.btn-link-light:hover {
+  border-color: #FFFFFF;
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  min-height: 44px;
+  color: #0B2448;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid rgba(11, 36, 72, 0.3);
+  padding-bottom: 2px;
+  transition: border-color 120ms ease;
+}
+
+.btn-link:hover {
+  border-color: #0B2448;
+}
+
+.container-tight {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-tight {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-tight {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.label-mono {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .label-mono {
+    font-size: 0.75rem;
+  }
+}
+
+.display-tight {
+  letter-spacing: -0.035em;
+}
+
+/* Brand pattern background */
+.brand-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Hide scrollbar for horizontal scroll areas */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area padding helper for sticky bar */
+.safe-bottom {
+  padding-bottom: calc(0.625rem + env(safe-area-inset-bottom));
+}
+
+/* Prevent iOS text size adjust on buttons */
+button, a {
+  -webkit-text-size-adjust: 100%;
+}
