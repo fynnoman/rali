@@ -59,26 +59,26 @@ export default function Footer() {
 
           <div className="lg:col-span-3">
             <div className="label-mono text-white/50 mb-4 md:mb-5">Kontakt</div>
-            <ul className="space-y-5 text-sm">
-              <li>
-                <a href={`tel:${PHONE_TEL}`} className="hover:text-white block">
+            <address className="not-italic space-y-5 text-sm">
+              <div>
+                <a href={`tel:${PHONE_TEL}`} className="hover:text-white block" aria-label="Telefonnummer anrufen">
                   <div className="flex items-center gap-2 text-signal-400 mb-1">
                     <Phone className="h-3.5 w-3.5" />
                     <span className="label-mono text-white/50">Telefon</span>
                   </div>
                   <div className="text-white font-semibold">{PHONE}</div>
                 </a>
-              </li>
-              <li>
-                <a href={`mailto:${EMAIL}`} className="hover:text-white block break-all">
+              </div>
+              <div>
+                <a href={`mailto:${EMAIL}`} className="hover:text-white block break-all" aria-label="E-Mail senden">
                   <div className="flex items-center gap-2 text-signal-400 mb-1">
                     <Mail className="h-3.5 w-3.5" />
                     <span className="label-mono text-white/50">E-Mail</span>
                   </div>
                   <div className="text-white font-semibold">{EMAIL}</div>
                 </a>
-              </li>
-              <li>
+              </div>
+              <div>
                 <div className="flex items-center gap-2 text-signal-400 mb-1">
                   <MapPin className="h-3.5 w-3.5" />
                   <span className="label-mono text-white/50">Adresse</span>
@@ -87,8 +87,8 @@ export default function Footer() {
                   Beethovenstraße 9A<br />
                   66740 Saarlouis
                 </div>
-              </li>
-            </ul>
+              </div>
+            </address>
           </div>
         </div>
 

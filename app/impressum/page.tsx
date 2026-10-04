@@ -5,7 +5,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Impressum",
+  description:
+    "Impressum und Anbieterkennzeichnung von RALI Entrümpelungen aus Saarlouis. Angaben gemäß § 5 TMG.",
   robots: { index: false, follow: true },
+  alternates: { canonical: "/impressum" },
 };
 
 export default function Impressum() {

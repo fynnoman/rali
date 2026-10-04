@@ -5,7 +5,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Datenschutzerklärung",
+  description:
+    "Datenschutzerklärung von RALI Entrümpelungen. Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO.",
   robots: { index: false, follow: true },
+  alternates: { canonical: "/datenschutz" },
 };
 
 export default function Datenschutz() {
