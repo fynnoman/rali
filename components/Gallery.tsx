@@ -4,12 +4,12 @@ import { Phone } from "lucide-react";
 const PHONE_TEL = "+4917672799107";
 
 const photos = [
-  { src: "/photos/before-kartons.jpg", alt: "Entrümpelung Wohnraum" },
+  { src: "/photos/before-wohnzimmer.jpg", alt: "Wohnraum vor der Entrümpelung" },
   { src: "/photos/sperrmuell-pile.jpg", alt: "Sperrmüll Abholung" },
-  { src: "/photos/after-hof.jpg", alt: "Besenrein übergebener Hof" },
+  { src: "/photos/before-bauschutt.jpg", alt: "Bauschutt vor der Entsorgung" },
   { src: "/photos/after-wohnzimmer.jpg", alt: "Nach der Entrümpelung" },
-  { src: "/photos/before-garten.jpg", alt: "Garten vor der Räumung" },
-  { src: "/photos/after-keller.jpg", alt: "Keller nach der Entrümpelung" },
+  { src: "/photos/before-gruenschnitt.jpg", alt: "Grünschnitt vor der Entsorgung" },
+  { src: "/photos/after-bauschutt.jpg", alt: "Fläche nach der Bauschutt-Entsorgung" },
 ];
 
 export default function Gallery() {

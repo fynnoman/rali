@@ -27,12 +27,12 @@ const services = [
   {
     title: "Grünschnitt-Entsorgung",
     desc: "Äste, Laub, Sträucher und Gartenabfälle. Abtransport und umweltgerechte Entsorgung.",
-    img: "/photos/before-garten.jpg",
+    img: "/photos/before-gruenschnitt.jpg",
   },
   {
     title: "Bauschutt-Entsorgung",
-    desc: "Beton, Fliesen, Ziegel. Saubere Entsorgung bei Umbau, Renovierung oder Rückbau.",
-    img: "/photos/after-hof.jpg",
+    desc: "Beton, Fliesen, Ziegel und Rückbaureste. Saubere Entsorgung bei Umbau, Renovierung oder Rückbau.",
+    img: "/photos/before-bauschutt.jpg",
   },
 ];
 
